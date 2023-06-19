@@ -1,42 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#root{
+  width: 70%;
+  padding-left: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    max-width: 42%;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+}
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1{
+  font-size: 5em;
+  color: green;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+canvas {
+    flex-shrink: 0;
+    background-color: #000;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+label{
+  font-weight: 700;
+  color: green;
 }
 
-.card {
-  padding: 2em;
+input[type="texto"]{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid green;
 }
 
-.read-the-docs {
-  color: #888;
+.fixed-label{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
 }
